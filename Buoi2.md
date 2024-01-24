@@ -160,7 +160,7 @@ console.log(tich);
 1. Dùng vòng lặp for, tính tổng của dãy sau: S(n) = 1 + 2 + 3 + ... + n
 2. Dùng vòng lặp for, tính tổng của dãy sau: S(n) = 1 + 1/2 + 1/3 + 1/4 + ... + 1/n
 3. Dùng vòng lặp for, tính tổng của dãy sau: S(n) = 1 + 4 + 9 + 16 + 25 +  ... + n^2
-4. Dùng vòng lặp for, tính tổng của dãy sau: S(n) = 1 + 9 + 27 + ... + n^3
+4. Dùng vòng lặp for, tính tổng của dãy sau: S(n) = 1 + 8 + 27 + ... + n^3
 5. Dùng vòng lặp while, in ra tất cả số nguyên dương lẻ < 100
 6. Dùng vòng lặp while, in ra tất cả số nguyên dương chẵn < 100
 7. Dùng vòng lặp while, in ra tất cả số nguyên âm lẻ > -100
