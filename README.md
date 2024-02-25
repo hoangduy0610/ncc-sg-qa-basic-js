@@ -3,3 +3,4 @@
 ## Training Basic JS
 - Buổi 1: Toán tử, biến và cấu trúc if. Link: [Buổi 1](Buoi1.md)
 - Buổi 2: Mảng và vòng lặp. Link: [Buổi 2](Buoi2.md)
+- Buổi 3: Cách dùng github cơ bản. Link: [Buổi 3](Buoi3.md) [Video record](https://drive.google.com/file/d/15H8YQRAYjDOLmJxIiaWveYGZgGlmMiKe/view?usp=sharing)
