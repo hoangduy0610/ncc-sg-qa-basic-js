@@ -80,3 +80,6 @@ git push
 ```bash
 git pull
 ```
+
+## Bài tập
+Push code Buổi 2 lên 1 repository github và gửi vào nhóm
