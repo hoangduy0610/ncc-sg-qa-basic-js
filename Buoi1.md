@@ -37,3 +37,8 @@ Kiểm tra xem đã cài được nodejs chưa: mở cmd gõ `node -v`, nếu k�
 - Phép phủ định điều kiện (phủ định kiểu đúng/sai):
 
 ![image](https://github.com/hoangduy0610/ncc-sg-qa-basic-js/assets/45957687/7dd1c726-8daa-487a-b122-32e520320934)
+
+## Bài tập thêm
+- Bài 1: Nhập 2 số a, b. Giải phương trình ax + b = 0
+- Bài 2: Nhập 3 số a, b, c. Giải phương trình ax^2 + bx + c = 0
+- Bài 3: Nhập vào a, b, c. Kiểm tra xem a, b, c có phải là độ dài 3 cạnh của 1 tam giác hay không. Nếu đúng, in ra loại tam giác (vuông, cân, đều, thường)
