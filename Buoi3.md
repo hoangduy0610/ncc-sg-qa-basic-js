@@ -1,3 +1,209 @@
+# Bài học
+
+## ✅ 1. Function & Arrow Function
+
+### 🔹 Hàm (Function)
+Hàm là một khối mã có thể tái sử dụng để thực hiện một nhiệm vụ cụ thể. Hàm giúp tổ chức code rõ ràng, dễ bảo trì và kiểm thử.
+
+**Cú pháp:**
+```js
+function tenHam(thamSo1, thamSo2) {
+  // logic xử lý
+  return giaTri;
+}
+```
+
+**Ví dụ:**
+```js
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(2, 3)); // 5
+```
+
+### 🔹 Arrow Function
+Arrow function là cách viết rút gọn của function trong ES6. Nó thường được dùng khi viết hàm ngắn, hoặc trong callback.
+
+**Cú pháp:**
+```js
+const tenHam = (thamSo) => {
+  // logic xử lý
+}
+```
+
+**Ví dụ rút gọn:**
+```js
+const sum = (a, b) => a + b;
+```
+
+## ✅ 2. Mảng (Array)
+
+Mảng là kiểu dữ liệu cho phép lưu trữ nhiều giá trị trong một biến.
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+```
+
+### 🔹 Duyệt mảng bằng `for`
+```js
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
+```
+
+### 🔹 forEach
+Thực hiện hành động với từng phần tử trong mảng, không trả về kết quả.
+```js
+numbers.forEach((num) => {
+  console.log(num);
+});
+```
+
+### 🔹 map
+Tạo ra mảng mới sau khi biến đổi từng phần tử.
+```js
+const doubled = numbers.map(num => num * 2); // [2, 4, 6, 8, 10]
+```
+
+### 🔹 filter
+Lọc các phần tử thỏa điều kiện.
+```js
+const even = numbers.filter(num => num % 2 === 0); // [2, 4]
+```
+
+### 🔹 reduce
+Tổng hợp (reduce) các phần tử thành một giá trị.
+```js
+const sum = numbers.reduce((acc, num) => acc + num, 0); // 15
+```
+
+## ✅ 3. Đối tượng (Object)
+
+Object là kiểu dữ liệu lưu trữ theo cặp key-value, rất phổ biến khi thao tác dữ liệu dạng cấu trúc.
+
+```js
+const user = {
+  name: "Alice",
+  age: 25
+};
+```
+
+### 🔹 Truy cập thuộc tính
+```js
+console.log(user.name);       // Alice
+console.log(user['age']);     // 25
+```
+
+### 🔹 Object lồng nhau
+```js
+const person = {
+  name: "Bob",
+  address: {
+    city: "Hanoi",
+    zip: "10000"
+  }
+};
+console.log(person.address.city); // Hanoi
+```
+
+### 🔹 Duyệt mảng các object
+```js
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 17 }
+];
+
+const adults = users.filter(u => u.age > 18);
+```
+
+## ✅ 4. Callback & setTimeout
+
+### 🔹 Callback là gì?
+Là một hàm được truyền vào hàm khác dưới dạng đối số và được gọi sau khi hành động nào đó hoàn tất.
+
+**Ví dụ:**
+```js
+function greet(name, callback) {
+  console.log("Xin chào " + name);
+  callback();
+}
+
+greet("Nam", () => {
+  console.log("Hoàn tất lời chào");
+});
+```
+
+### 🔹 setTimeout
+Giúp delay đoạn code một thời gian nhất định (ms).
+
+**Ví dụ:**
+```js
+setTimeout(() => {
+  console.log("In ra sau 2 giây");
+}, 2000);
+```
+
+## ✅ 5. Promise – then/catch
+
+### 🔹 Promise là gì?
+Promise là một đối tượng đại diện cho kết quả (thành công hoặc thất bại) của một thao tác bất đồng bộ.
+
+**Cú pháp tạo Promise:**
+```js
+const promise = new Promise((resolve, reject) => {
+  if (thanhCong) {
+    resolve("Thành công");
+  } else {
+    reject("Thất bại");
+  }
+});
+```
+
+### 🔹 then / catch
+- `then()` dùng để xử lý khi thành công
+- `catch()` dùng để bắt lỗi khi thất bại
+
+```js
+promise
+  .then(result => console.log(result))
+  .catch(error => console.error(error));
+```
+
+## ✅ 6. async / await
+
+Là cú pháp mới giúp viết code bất đồng bộ rõ ràng, dễ đọc hơn Promise thuần.
+
+**Cú pháp:**
+```js
+async function myFunction() {
+  const result = await somePromiseFunction();
+  console.log(result);
+}
+```
+
+**Ví dụ:**
+```js
+function fakeApi() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Dữ liệu đã về");
+    }, 2000);
+  });
+}
+
+async function getData() {
+  const data = await fakeApi();
+  console.log(data);
+}
+
+getData();
+```
+
+📝 **Ghi nhớ:**
+- `await` chỉ dùng được trong `async function`.
+
+# Bài tập
+
 ## 📦 1. Viết Hàm (Function & Arrow Function)
 
 ### Bài 1
